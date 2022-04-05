@@ -4,7 +4,7 @@ import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 const Question = ({title, info}) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <article>
+    <article className='question'>
       <header>
         <h4>{title}</h4>
         <button className='btn' onClick={()=>setIsOpen(!isOpen)}>
